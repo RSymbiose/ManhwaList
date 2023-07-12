@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notation de film</title>
+  </head>
+  <body>
+    <h1>Notation de film</h1>
+    <h2>Film 1</h2>
+    <form id="film1">
+      <label for="note1">Note :</label>
+      <input type="text" id="note1" name="note">
+      <button type="button" onclick="enregistrerNote1()">Enregistrer</button>
+    </form>
+
+    <h2>Film 2</h2>
+    <form id="film2">
+      <label for="note2">Note :</label>
+      <input type="text" id="note2" name="note">
+      <button type="button" onclick="enregistrerNote2()">Enregistrer</button>
+    </form>
+
+    <script>
+      function enregistrerNote1() {
+        // Récupère la valeur de la note
+        var note1 = document.getElementById("note1").value;
+
+        // Enregistre la note dans le stockage local avec l'ID du formulaire comme clé
+        localStorage.setItem("film1", note1);
+      }
+
+      function enregistrerNote2() {
+        // Récupère la valeur de la note
+        var note2 = document.getElementById("note2").value;
+
+        // Enregistre la note dans le stockage local avec l'ID du formulaire comme clé
+        localStorage.setItem("film2", note2);
+      }
+
+      // Récupère la note du stockage local et la remplie dans le champ de texte du formulaire
+      var note1Enregistree = localStorage.getItem("film1");
+      if (note1Enregistree) {
+        document.getElementById("note1").value = note1Enregistree;
+      }
+
+      // Récupère la note du stockage local et la remplie dans le champ de texte du formulaire
+      var note2Enregistree = localStorage.getItem("film2");
+      if (note2Enregistree) {
+        document.getElementById("note2").value = note2Enregistree;
+      }
+    </script>
+  </body>
+</html>

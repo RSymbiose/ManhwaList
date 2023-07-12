@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Manhwa</title>
+		<meta name="description" content="Ce site vous permet de trouver différentes informations sur les manhwa" />
+		<meta name="keywords" content="manhwa, scan" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+		<body>
+            <!-- Nav bar -->
+
+      <nav class="desktop transparent">
+        <a href="index.html"><img src="pages/images/logo.png" alt="Logo"></a>
+        <a href="pages/action.html">Action</a>
+        <a href="pages/fantastique.html">Fantastique</a>
+        <a href="pages/scolaire.html">Scolaire</a>
+        <a href="pages/romance.html">Romance</a>
+        <a href="pages/contact.html">Contacts</a>
+        </nav>
+          <nav class="mobile">
+            <a onClick="openNav()"><img draggable="false" src="pages/images/Burger.svg"></a>
+            <a class="logoMobile" href="index.html"><img draggable="false" src="pages/images/logo.png"></a>
+            <a href="index.html"><img draggable="false" src="pages/images/Mail.svg"></a>
+          </nav>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="pages/action.html">Action</a>
+              <a href="pages/fantastique.html">Fantastique</a>
+              <a href="pages/scolaire.html">Scolaire</a>
+              <a href="pages/romance.html">Romance</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+        <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("desktop").style.top = "0";
+            } else {
+                document.getElementById("desktop").style.top = "-100px";
+            }
+        }
+  
+        function openNav() {
+            document.getElementById("myNav").style.width = "80%";
+        }
+  
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+  
+        </script>  
+            <header>
+                <h1>MANHWA</h1>
+            </header>
+            <main>
+                <article class="bande">
+                </article>
+                <h2 class="connexion">Connexion</h2>
+                <form id="loginForm" action="private.html" class="laform">
+                    <input type="password" id="passwordInput" placeholder="Mot de passe" required>
+                    <button type="submit">Se connecter</button>
+                </form>
+
+                <script>
+                    document.getElementById('loginForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // Empêche la soumission par défaut du formulaire
+                        var password = document.getElementById('passwordInput').value;
+                        localStorage.setItem('password', password); // Stocke le mot de passe dans le stockage local
+                        window.location.href = 'pages/private.html'; // Redirige vers la page private.html
+                    });
+                </script>
+                <article class="recomandations">
+                    <h2>Nos recommandations</h2>
+                </article>
+                <div class="blackline"></div>
+                <article class="cartes">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pages/images/manhwa1.jpg" alt="" width="20" height="50">
+                                <h2>Solo Leveling</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Résumé</h2>
+                                <h3>Lorsque d'étranges portails sont apparus aux quatre coins du monde, l'humanité a dû trouver une parade pour ne pas finir massacrée entre les griffes des monstres qu'ils ont apportés avec eux. Dans le même temps, certaines personnes ont développé des capacités permettant de chasser. Ces combattants intrépides n'hésitent pas à foncer au coeur des donjons pour combattre les créatures qu'ils abritent.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="espace">
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pages/images/tbate.png" alt="" width="20" height="50">
+                                <h2>the beginning after the end</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Résumé</h2>
+                                <h3>Ancien roi solitaire et obsédé par la conquête, il meurt assassiné et se réincarne en Arthur Leywin, fils aîné d'un modeste couple d'aventuriers pratiquant la magie. Plongé dans un monde qu'il ne connaît pas, il va utiliser tout son savoir pour s'adapter et corriger les erreurs du passé. Mais derrière la paix et la prospérité de ce nouvel univers se cache une menace sans précédent...</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="espace">
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pages/images/mercenary.jpg" alt="" width="20" height="50">
+                                <h2>mercenary enrollment</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Résumé</h2>
+                                <h3>Ijin est un jeune mercenaire qui est le seul survivant d'un accident d'avion survenu dans son enfance. Il vient tout juste de retourner auprès de sa famille qui le croyait mort durant ses 10 ans d'absence. Ijin pourra-t-il mettre de côté son passé sombre et mener une vie normale de lycéen ?</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="espace">
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pages/images/tales.jfif" alt="" width="20" height="50">
+                                <h2>tales of demon and gods</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Résumé</h2>
+                                <h3>Nie li était l'un des plus forts spiritiste démon et se tenait au pinacle du monde des arts martiaux. Cependant il perdit la vie durant la bataille avec l'empereur sage et 6 bête de menace divine. Son âme fut ensuite ramenée dans le temps ou sa ville, glory city n'avait pas été détruite par une invasion de démon. Il est maintenant l'heure de sa vengeance...</h3>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <footer>
+                <img src="pages/images/logo.png" alt="logo sport koh" title="Logo Sport
+                  KOH" width="70">
+                <img src="pages/images/twitter.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <img src="pages/images/facebook.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <p>
+                  Suivez-nous ! <br>
+                  Copyright © 2023 Manhwa <br>
+                  Informations légales | Politique de privatisation
+                </p>
+              </footer>
+        </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Manhwa</title>
+		<meta name="description" content="Ce site vous permet de trouver différentes informations sur les manhwa" />
+		<meta name="keywords" content="manhwa, scan" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+		<body>
+            <!-- Nav bar -->
+
+      <nav class="desktop transparent">
+        <a href="../index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="action.html">Action</a>
+        <a href="fantastique.html">Fantastique</a>
+        <a href="scolaire.html">Scolaire</a>
+        <a href="romance.html">Romance</a>
+        <a href="contact.html">Contacts</a>
+        </nav>
+          <nav class="mobile">
+            <a onClick="openNav()"><img draggable="false" src="images/Burger.svg"></a>
+            <a class="logoMobile" href="../index.html"><img draggable="false" src="images/logo.png"></a>
+            <a href="../index.html"><img draggable="false" src="images/Mail.svg"></a>
+          </nav>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="action.html">Action</a>
+              <a href="fantastique.html">Fantastique</a>
+              <a href="scolaire.html">Scolaire</a>
+              <a href="romance.html">Romance</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+        <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("desktop").style.top = "0";
+            } else {
+                document.getElementById("desktop").style.top = "-100px";
+            }
+        }
+  
+        function openNav() {
+            document.getElementById("myNav").style.width = "80%";
+        }
+  
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+  
+        </script>  
+            <header>
+                <h1>SCOLAIRE</h1>
+            </header>
+            <main>
+                <article class="bande">
+                </article>
+                <article class="recomandations">
+                    <h2>Nos manhwas scolaire</h2>
+                        <form>
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit">Rechercher</button>
+                    </form>
+                </article>
+                <div class="blackline"></div>
+                <!-- Scolaire  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/mercenary.jpg" alt="" width="20" height="50">
+                                    <h2>mercenary enrollment</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Ijin est un jeune mercenaire qui est le seul survivant d'un accident d'avion survenu dans son enfance. Il vient tout juste de retourner auprès de sa famille qui le croyait mort durant ses 10 ans d'absence. Ijin pourra-t-il mettre de côté son passé sombre et mener une vie normale de lycéen ?</p>
+                    <div class="blackline2"></div>
+                    <article id="scolaire" class="util">
+                      <label for="commentaire-input">Avis ou commentaires :</label>
+                      <br>
+                      <textarea id="commentaire-input" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                      <button type="button" onclick="enregistrerNote()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Scolaire1  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/godofblackfield.webp" alt="" width="20" height="50">
+                                    <h2>god of blackfield</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Kang Chan, un soldat légendaire surnommé "God of Blackfield", meurt dans une embuscade lors d'une opération militaire. Avant qu'une balle ne le tue, il réalise qu'un allié est à l'origine du massacre de son unité. Alors qu'une dernière pensée vengeresse lui traverse l'esprit, il sombre... et se réveille dans le corps d'un lycéen coréen de 19 ans ! Kang Chan réalise alors qu'il a une chance d'assouvir sa vengeance. Mais ne vaut-il pas mieux vivre sa vie d'adolescent? Le G.O.B trace son chemin...</p>
+                    <div class="blackline2"></div>
+                    <article id="scolaire1" class="util">
+                        <label for="commentaire-input1">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input1" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote1()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Scolaire2  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/thegirlfrom.jpg" alt="" width="20" height="50">
+                                    <h2>the girl from random chatting</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Joonwoo déteste l’école et a du mal à se faire des amis. Ses seuls moments heureux sont lorsqu’il parle à des inconnus via l’application de chat aléatoire Random Chat. C’est ainsi que Joonwoo finit par se lier d’amitié avec une fille de RanChat, qui se révèle être sa camarade de classe, Sungah, sauf qu’elle n’en a aucune idée ! Joonwoo sera-t-il capable de combattre son anxiété sociale, son passé délinquant ainsi que les événements tragiques qui tendent à converger vers lui ? Pourra-t-il se rapprocher d’elle dans la vie réelle ?</p>
+                    <div class="blackline2"></div>
+                    <article id="scolaire2" class="util">
+                        <label for="commentaire-input2">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input2" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote2()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Scolaire3  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/Boss In School.jpg" alt="" width="20" height="50">
+                                    <h2>boss in school</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Seth Kwon, un combattant né, arrête de se battre suite à la promesse qu’il fait à sa mère… Mais les choses changent lorsque son père lui laisse ce seul et unique message : « Arrête de te faire tabasser ».</p>
+                    <div class="blackline2"></div>
+                    <article id="scolaire3" class="util">
+                        <label for="commentaire-input3">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input3" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote3()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Scolaire4  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/Medical Rebirth.webp" alt="" width="20" height="50">
+                                    <h2>medical rebirth</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Kim Ji Hyun, qui a vécu sa vie en tant que chirurgien de mauvaise réputation, gagne une seconde chance de revivre sa vie. Il retourne ensuite à ses années de collège et vit sa vie comme jamais auparavant, il étudie sans arrêt. Son objectif est de devenir un dermatologue qui gagne beaucoup d’argent au lieu du pauvre chirurgien qu’il était de sa vie précédente !</p>
+                    <div class="blackline2"></div>
+                    <article id="scolaire4" class="util">
+                        <label for="commentaire-input4">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input4" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote4()">Enregistrer</button>
+                    </article>
+                </article>
+            </main>
+            <footer>
+                <img src="images/logo.png" alt="logo sport koh" title="Logo Sport
+                  KOH" width="70">
+                <img src="images/twitter.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <img src="images/facebook.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <p>
+                  Suivez-nous ! <br>
+                  Copyright © 2023 Manhwa <br>
+                  Informations légales | Politique de privatisation
+                </p>
+              </footer>
+              <script>
+                const searchButton = document.querySelector('button[type="submit"]');
+                searchButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le formulaire de s'envoyer
+                const searchTerm = document.querySelector('input[type="text"]').value;
+                if (searchTerm) {
+                    const regex = new RegExp(searchTerm, 'g');
+                    const pageContent = document.documentElement.innerHTML;
+                    const highlightedPageContent = pageContent.replace(regex, '<mark>$&</mark>');
+                    document.documentElement.innerHTML = highlightedPageContent;
+                    const highlightedElement = document.querySelector('mark');
+                    if (highlightedElement) {
+                    setTimeout(function() {
+                        highlightedElement.scrollIntoView();
+                    }, 0);
+                    }
+                }
+                });
+
+                function enregistrerNote() {
+                    var com = document.getElementById("commentaire-input").value;
+                    localStorage.setItem("scolaire", com);
+                }
+                var noteEnregistree = localStorage.getItem("scolaire");
+                if (noteEnregistree) {
+                    document.getElementById("commentaire-input").value = noteEnregistree;
+                }
+
+                ///////
+                
+                function enregistrerNote1() {
+                    var com1 = document.getElementById("commentaire-input1").value;
+                    localStorage.setItem("scolaire1", com1);
+                }
+                var note1Enregistree = localStorage.getItem("scolaire1");
+                if (note1Enregistree) {
+                    document.getElementById("commentaire-input1").value = note1Enregistree;
+                }
+
+                ///////
+                
+                function enregistrerNote2() {
+                    var com2 = document.getElementById("commentaire-input2").value;
+                    localStorage.setItem("scolaire2", com2);
+                }
+                var note2Enregistree = localStorage.getItem("scolaire2");
+                if (note2Enregistree) {
+                    document.getElementById("commentaire-input2").value = note2Enregistree;
+                }
+
+                ///////
+                
+                function enregistrerNote3() {
+                    var com3 = document.getElementById("commentaire-input3").value;
+                    localStorage.setItem("scolaire3", com3);
+                }
+                var note3Enregistree = localStorage.getItem("scolaire3");
+                if (note3Enregistree) {
+                    document.getElementById("commentaire-input3").value = note3Enregistree;
+                }
+
+                ///////
+                
+                function enregistrerNote4() {
+                    var com4 = document.getElementById("commentaire-input4").value;
+                    localStorage.setItem("scolaire4", com4);
+                }
+                var note4Enregistree = localStorage.getItem("scolaire4");
+                if (note4Enregistree) {
+                    document.getElementById("commentaire-input4").value = note4Enregistree;
+                }
+              </script>
+        </body>
+</html>

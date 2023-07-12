@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Manhwa</title>
+		<meta name="description" content="Ce site vous permet de trouver différentes informations sur les manhwa" />
+		<meta name="keywords" content="manhwa, scan" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+		<body>
+            <!-- Nav bar -->
+
+      <nav class="desktop transparent">
+        <a href="../index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="action.html">Action</a>
+        <a href="fantastique.html">Fantastique</a>
+        <a href="scolaire.html">Scolaire</a>
+        <a href="romance.html">Romance</a>
+        <a href="contact.html">Contacts</a>
+        </nav>
+          <nav class="mobile">
+            <a onClick="openNav()"><img draggable="false" src="images/Burger.svg"></a>
+            <a class="logoMobile" href="../index.html"><img draggable="false" src="images/logo.png"></a>
+            <a href="../index.html"><img draggable="false" src="images/Mail.svg"></a>
+          </nav>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="action.html">Action</a>
+              <a href="fantastique.html">Fantastique</a>
+              <a href="scolaire.html">Scolaire</a>
+              <a href="romance.html">Romance</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+        <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("desktop").style.top = "0";
+            } else {
+                document.getElementById("desktop").style.top = "-100px";
+            }
+        }
+  
+        function openNav() {
+            document.getElementById("myNav").style.width = "80%";
+        }
+  
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+  
+        </script>  
+            <header>
+                <h1>ACTION</h1>
+            </header>
+            <main>
+                <article class="bande">
+                </article>
+                <article class="recomandations">
+                    <h2>Nos manhwas action</h2>
+                    <form>
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit">Rechercher</button>
+                    </form>                      
+                </article>
+                <div class="blackline"></div>
+                <!-- Action  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/manhwa1.jpg" alt="" width="20" height="50">
+                                    <h2>solo leveling</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">D’étranges portails sont apparus aux quatre coins du monde, laissant pénétrer d’abominables monstres. Pour résister à l’envahisseur, l’humanité a développé des pouvoirs surnaturels. Grâce à cela ils ont pu constituer une armée de chasseurs intrépides passant les portails pour attaquer l’ennemi au cœur de ses donjons. Des combats sans merci s’y déroulent avec, à la clé, de fabuleux trésors. Sung Jin-Woo est le plus faible des chasseurs. Alors qu’il participe à un raid, il s’effondre et est laissé pour mort. Mais à son réveil à l’hôpital, il ne se sent plus le même et découvre, grâce à une interface virtuelle, qu’il devient progressivement de plus en plus fort.</p>
+                    <div class="blackline2"></div>
+                    <article id="action" class="util">
+                        <label for="commentaire-input">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action1  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/disaster.webp" alt="" width="20" height="50">
+                                    <h2>the return of the disaster class hero</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Il était une fois un héros qui considéré autre fois comme le plus puissant de la Terre.<br>
+
+                        « Mais il est mort… Comment une personne désignée comme morte pourrait-il revenir ? »<br>
+                        « Ouais, j’aimerais bien voir ça, moi aussi. »<br>
+                        
+                        Mais 20 années plus tard, il revint.<br>
+                        
+                        « Pourquoi êtes-vous aussi choqués, les gars ? À voir vos gueules, on pourrait croire que vous vous sentez coupable ? »<br>
+                        
+                        ‘Ces enfoirés… je vais pas les laisser s’en tirer comme ça…’</p>
+                    <div class="blackline2"></div>
+                    <article id="action1" class="util">
+                        <label for="commentaire-input1">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input1" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote1()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action2  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/survival.webp" alt="" width="20" height="50">
+                                    <h2>return survival</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Le monde est-il revenu à il y a six mois ? C’est une chance ? Ou une répétition du désespoir ? Une catastrophe, un virus zombie qui a frappé la Terre. Trois ans pour survivre à une vie dévastatrice et désespérée à travers des dizaines de crises de mort sur une planète en ruine. Finalement, je ne pouvais plus le supporter, et j’ai été frappé par une horde de zombies et j’ai fini. Et … quand j’ai rouvert les yeux … J’étais de retour dans le passé juste six mois avant le virus zombie est venu dans le monde ! Dans les six prochains mois, ce monde pacifique périra. Et seulement moi…</p>
+                    <div class="blackline2"></div>
+                    <article id="action2" class="util">
+                        <label for="commentaire-input2">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input2" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote2()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action3  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/tennager.webp" alt="" width="20" height="50">
+                                    <h2>teenage swordsman</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">L’histoire se déroule dans le célèbre jeu VR en ligne « Quest Hero ».
+                        Un célèbre joueur de Quest Hero, Harang, est emmené dans un autre monde par une mystérieuse entité noire.
+                        Il a beau essayer, il n’arrive pas à se déconnecter, et il est même attaqué. Non seulement il ressent la douleur, mais il rencontre le vrai Yuta et non le PNJ Yuta.
+                        Harang pourra-t-il accomplir les « 7 quêtes » et rentrer chez lui sain et sauf ?
+                        C’est ainsi que commence l’histoire de l’adolescent épéiste Harang, qui est tombé dans un monde inconnu !</p>
+                    <div class="blackline2"></div>
+                    <article id="action3" class="util">
+                        <label for="commentaire-input3">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input3" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote3()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action4  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/supergodgen.webp" alt="" width="20" height="50">
+                                    <h2>super god gen</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Basé sur une adaptation du roman de l’auteur ‘Twelve Winged Dark Seraph’. À l’avenir, d’innombrables bêtes envahiront. Comme vous êtes capable d’obtenir certains gènes en dévorant la chair des bêtes, l’humanité a accueilli une ère d’évolution génétique. Han Sen, un nouveau venu qui venait d’entrer dans le refuge, était un « maniaque des fesses » méprisé à l’extérieur. Il est, cependant, aussi le « Dieu B » qui a été admiré par beaucoup! Han Sen: « Je suis désolé, mais je suis le seul à pouvoir obtenir les gènes du Super Dieu! »</p>
+                    <div class="blackline2"></div>
+                    <article id="action4" class="util">
+                        <label for="commentaire-input4">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input4" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote4()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action5  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/advanced.webp" alt="" width="20" height="50">
+                                    <h2>advanced evolution</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Ming He est un jeune homme doté d’un extraordinaire pouvoir de type invisible, mais ses pouvoirs se situent au rang le plus médiocre de la poussière blanche. Sur le chemin du retour, une étoile filante désastreuse portant le nom de code « Goddess » perce le ciel. Elle heurte par hasard Ming He, qui roulait sur une route déserte, et s’attache à lui. « Déesse » confère à Ming He un talent puissant et extraordinaire. Avec son talent original et inattendu de « déesse », Ming He va lentement devenir l’humain le plus fort, tout en découvrant la vérité derrière le pouvoir cosmique !</p>
+                    <div class="blackline2"></div>
+                    <article id="action5" class="util">
+                        <label for="commentaire-input5">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input5" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote5()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action6  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/seriously.jpg" alt="" width="20" height="50">
+                                    <h2>it all starts with playing game seriously</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Le monde de yuans est devenu réalité et Liu yi, impuissant a vu sa sœur se faire tuer devant ses yeux. Mais après sa mort, le jeu lui a laissé une seconde chance en le renvoyant dans le passé, pourra-t-il sauver ceux qu’il aime ? Grâce à sa détermination et ses connaissances , pourra-t-il sauver sa sœur et accumuler des niveaux ? S’il s’y met à fond, arrivera-t-il à surpasser ses peurs et changer son futur, arrivera-t-il à renverser la hiérarchie qu’il connaissait ?</p>
+                    <div class="blackline2"></div>
+                    <article id="action6" class="util">
+                        <label for="commentaire-input6">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input6" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote6()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action7  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/seoulstation.webp" alt="" width="20" height="50">
+                                    <h2>seoul station druid</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Park Sooho est revenu sur Terre après avoir disparu dans un autre monde pendant près d’un millénaire. Mais au même moment, sa planète natale s’était transformée en un monde où la loi du plus fort régnait après l’apparition de « monstres ».</p>
+                    <div class="blackline2"></div>
+                    <article id="action7" class="util">
+                        <label for="commentaire-input7">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input7" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote7()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action8  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/bookeating.webp" alt="" width="20" height="50">
+                                    <h2>the book eating magician</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Un étudiant de l’académie des magiciens avec peu de talent, mais toutes les connaissances que l’on peut attendre d’un érudit. Il acquiert bientôt le pouvoir d’obtenir des compétences directement des livres. Il est le mangeur de livres.</p>
+                    <div class="blackline2"></div>
+                    <article id="action8" class="util">
+                        <label for="commentaire-input8">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input8" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote8()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action9  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/KillingGods.jpg" alt="" width="20" height="50">
+                                    <h2>my way of killing gods in another world</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Chen Zhi est un étudiant et un talentueux kenshi. En jouant à un jeu à la poursuite d’une fille, il se fait frapper par un éclair et se retrouve enfermé dans le jeu !
+                        Il cherche à survivre, mais ne s’attend pas à rencontrer un boss dès le début !
+                    </br>
+                        Le joueur Chen Zhi va-t-il mourir ou saura-t-il vaincre ce boss ?</p>
+                    <div class="blackline2"></div>
+                    <article id="action9" class="util">
+                        <label for="commentaire-input9">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input9" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote9()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action10  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/TheGodOfHighSchool.jpg" alt="" width="20" height="50">
+                                    <h2>the god of high school</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">L’histoire est centrée sur Mori Jin un jeune homme de 17 ans spécialisé dans un art appelé le re:taekwondo et cherchant par-dessus tout à devenir le plus fort, Daewi Han un expert en karaté dont l’ami est hospitalisé et Mira Yu-Ssi une experte en sabre cherchant à enrichir sa famille.</p>
+                    <div class="blackline2"></div>
+                    <article id="action10" class="util">
+                        <label for="commentaire-input10">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input10" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote10()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action11  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/player.jpg" alt="" width="20" height="50">
+                                    <h2>player</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">En publiant le « meilleur commentaire », je suis devenu en quelque sorte le personnage principal d’un webtoon !</p>
+                    <div class="blackline2"></div>
+                    <article id="action11" class="util">
+                        <label for="commentaire-input11">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input11" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote11()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action12  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/Drug-Eating.jpg" alt="" width="20" height="50">
+                                    <h2>drug-eating genius mage</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Ayant atteint sa limite de talent en magie, le protagoniste a été envoyé dans le monde du jeu comme punition – dans une immense ville nommée Valkan. Pour survivre, il noue des relations avec d’autres personnes et enquête sur le secret du « monde clos », s’efforçant d’empêcher la fin du monde.</p>
+                    <div class="blackline2"></div>
+                    <article id="action12" class="util">
+                        <label for="commentaire-input12">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input12" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote12()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action13  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/My Dad Is Too Strong.jpg" alt="" width="20" height="50">
+                                    <h2>my dad is too strong</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Lee Dojun un jeune employé de bureau, obtient un pouvoir hors nome après avoir été transféré dans un monde parallèle à celui de l’ancienne Corée. Après un moment d’inattention, il est réapparu dans son monde d’origine.</p>
+                    <div class="blackline2"></div>
+                    <article id="action13" class="util">
+                        <label for="commentaire-input13">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input13" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote13()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action14  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/Player Who Returned 10 000 Years Later.jpg" alt="" width="20" height="50">
+                                    <h2>player who returned 10 000 years later</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Du jour au lendemain, il s’est retrouvé en Enfer. Tout ce qui lui restait, était sa foi en Dieu et son désir de survivre.
+                        Du 1er au 9000e cercle cercle des Enfers, il a absorbé des dizaines, des centaines de milliers de démons. Même les sept grands ducs des Abysses se prosternèrent devant lui.
+                        – Pourquoi tu veux partir ? Il te manque quelque chose ici ?
+                        – Fais ce que tu as à faire.
+                        Il n’y a ni nourriture ni divertissement. Il n’y a en enfer qu’un désert aride et de terribles démons.
+                        « Je veux rentrer à la maison… »
+                        Et il a décidé de retourner sur Terre, dix mille ans plus tard.</p>
+                    <div class="blackline2"></div>
+                    <article id="action14" class="util">
+                        <label for="commentaire-input14">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input14" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote14()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Action15  -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/Suicidal Battle God.jpg" alt="" width="20" height="50">
+                                    <h2>reincarnation of the suicidal battle god</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Zéphyr est le plus puissant des humains et le dernier survivant dans un monde complètement détruit par Tartaros, le Dieu des démons. Malgré sa défaite, les Dieux qui trouvaient la misère et le malheur des humains comiques et divertissants ont trouvé son combat amusant et ont été assez stupides pour donner une seconde chance à Zéphyr, afin qu'il puisse remonter le temps pour sauver l'humanité. Cette fois-ci, Zéphyr ne se laissera pas faire. Il parviendra au sommet et brisera tous les obstacles pour anéantir ces fichus Dieux une bonne fois pour toutes !</p>
+                    <div class="blackline2"></div>
+                    <article id="action15" class="util">
+                        <label for="commentaire-input15">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input15" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote15()">Enregistrer</button>
+                    </article>
+                </article>
+            </main>
+            <footer>
+                <img src="images/logo.png" alt="logo sport koh" title="Logo Sport
+                  KOH" width="70">
+                <img src="images/twitter.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <img src="images/facebook.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <p>
+                  Suivez-nous ! <br>
+                  Copyright © 2023 Manhwa <br>
+                  Informations légales | Politique de privatisation
+                </p>
+              </footer>
+              <script>
+                const searchButton = document.querySelector('button[type="submit"]');
+                searchButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le formulaire de s'envoyer
+                const searchTerm = document.querySelector('input[type="text"]').value;
+                if (searchTerm) {
+                    const regex = new RegExp(searchTerm, 'g');
+                    const pageContent = document.documentElement.innerHTML;
+                    const highlightedPageContent = pageContent.replace(regex, '<mark>$&</mark>');
+                    document.documentElement.innerHTML = highlightedPageContent;
+                    const highlightedElement = document.querySelector('mark');
+                    if (highlightedElement) {
+                    setTimeout(function() {
+                        highlightedElement.scrollIntoView();
+                    }, 0);
+                    }
+                }
+                });
+                function enregistrerNote() {
+                    var com = document.getElementById("commentaire-input").value;
+                    localStorage.setItem("action", com);
+                }
+                var noteEnregistree = localStorage.getItem("action");
+                if (noteEnregistree) {
+                    document.getElementById("commentaire-input").value = noteEnregistree;
+                }
+
+                ///////
+
+                function enregistrerNote1() {
+                    var com1 = document.getElementById("commentaire-input1").value;
+                    localStorage.setItem("action1", com1);
+                }
+                var note1Enregistree = localStorage.getItem("action1");
+                if (note1Enregistree) {
+                    document.getElementById("commentaire-input1").value = note1Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote2() {
+                    var com2 = document.getElementById("commentaire-input2").value;
+                    localStorage.setItem("action2", com2);
+                }
+                var note2Enregistree = localStorage.getItem("action2");
+                if (note2Enregistree) {
+                    document.getElementById("commentaire-input2").value = note2Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote3() {
+                    var com3 = document.getElementById("commentaire-input3").value;
+                    localStorage.setItem("action3", com3);
+                }
+                var note3Enregistree = localStorage.getItem("action3");
+                if (note3Enregistree) {
+                    document.getElementById("commentaire-input3").value = note3Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote4() {
+                    var com4 = document.getElementById("commentaire-input4").value;
+                    localStorage.setItem("action4", com4);
+                }
+                var note4Enregistree = localStorage.getItem("action4");
+                if (note4Enregistree) {
+                    document.getElementById("commentaire-input4").value = note4Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote5() {
+                    var com5 = document.getElementById("commentaire-input5").value;
+                    localStorage.setItem("action5", com5);
+                }
+                var note5Enregistree = localStorage.getItem("action5");
+                if (note5Enregistree) {
+                    document.getElementById("commentaire-input5").value = note5Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote6() {
+                    var com6 = document.getElementById("commentaire-input6").value;
+                    localStorage.setItem("action6", com6);
+                }
+                var note6Enregistree = localStorage.getItem("action6");
+                if (note6Enregistree) {
+                    document.getElementById("commentaire-input6").value = note6Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote7() {
+                    var com7 = document.getElementById("commentaire-input7").value;
+                    localStorage.setItem("action7", com7);
+                }
+                var note7Enregistree = localStorage.getItem("action7");
+                if (note7Enregistree) {
+                    document.getElementById("commentaire-input7").value = note7Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote8() {
+                    var com8 = document.getElementById("commentaire-input8").value;
+                    localStorage.setItem("action8", com8);
+                }
+                var note8Enregistree = localStorage.getItem("action8");
+                if (note8Enregistree) {
+                    document.getElementById("commentaire-input8").value = note8Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote9() {
+                    var com9 = document.getElementById("commentaire-input9").value;
+                    localStorage.setItem("action9", com9);
+                }
+                var note9Enregistree = localStorage.getItem("action9");
+                if (note9Enregistree) {
+                    document.getElementById("commentaire-input9").value = note9Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote10() {
+                    var com10 = document.getElementById("commentaire-input10").value;
+                    localStorage.setItem("action10", com10);
+                }
+                var note10Enregistree = localStorage.getItem("action10");
+                if (note10Enregistree) {
+                    document.getElementById("commentaire-input10").value = note10Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote11() {
+                    var com11 = document.getElementById("commentaire-input11").value;
+                    localStorage.setItem("action11", com11);
+                }
+                var note11Enregistree = localStorage.getItem("action11");
+                if (note11Enregistree) {
+                    document.getElementById("commentaire-input11").value = note11Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote12() {
+                    var com12 = document.getElementById("commentaire-input12").value;
+                    localStorage.setItem("action12", com12);
+                }
+                var note12Enregistree = localStorage.getItem("action12");
+                if (note12Enregistree) {
+                    document.getElementById("commentaire-input12").value = note12Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote13() {
+                    var com13 = document.getElementById("commentaire-input13").value;
+                    localStorage.setItem("action13", com13);
+                }
+                var note13Enregistree = localStorage.getItem("action13");
+                if (note13Enregistree) {
+                    document.getElementById("commentaire-input13").value = note13Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote14() {
+                    var com14 = document.getElementById("commentaire-input14").value;
+                    localStorage.setItem("action14", com14);
+                }
+                var note14Enregistree = localStorage.getItem("action13");
+                if (note14Enregistree) {
+                    document.getElementById("commentaire-input14").value = note14Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote15() {
+                    var com15 = document.getElementById("commentaire-input15").value;
+                    localStorage.setItem("action15", com15);
+                }
+                var note15Enregistree = localStorage.getItem("action15");
+                if (note15Enregistree) {
+                    document.getElementById("commentaire-input15").value = note15Enregistree;
+                }
+
+                ///////
+              </script>
+        </body>
+</html> 

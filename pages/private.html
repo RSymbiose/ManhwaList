@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Manhwa</title>
+		<meta name="description" content="Ce site vous permet de trouver différentes informations sur les manhwa" />
+		<meta name="keywords" content="manhwa, scan" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+		<body>
+            <!-- Nav bar -->
+
+      <nav class="desktop transparent">
+        <a href="../index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="action.html">Action</a>
+        <a href="fantastique.html">Fantastique</a>
+        <a href="scolaire.html">Scolaire</a>
+        <a href="romance.html">Romance</a>
+        <a href="contact.html">Contacts</a>
+        </nav>
+          <nav class="mobile">
+            <a onClick="openNav()"><img draggable="false" src="images/Burger.svg"></a>
+            <a class="logoMobile" href="../index.html"><img draggable="false" src="images/logo.png"></a>
+            <a href="../index.html"><img draggable="false" src="images/Mail.svg"></a>
+          </nav>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="action.html">Action</a>
+              <a href="fantastique.html">Fantastique</a>
+              <a href="scolaire.html">Scolaire</a>
+              <a href="romance.html">Romance</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+        <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("desktop").style.top = "0";
+            } else {
+                document.getElementById("desktop").style.top = "-100px";
+            }
+        }
+  
+        function openNav() {
+            document.getElementById("myNav").style.width = "80%";
+        }
+  
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+  
+        </script>  
+            <header>
+                <h1>ADULTE</h1>
+            </header>
+            <main>
+                <article class="bande">
+                </article>
+                <script>
+                    var storedPassword = localStorage.getItem('password'); // Récupère le mot de passe depuis le stockage local
+                    var correctPassword = 'pegi18'; // Remplacez cela par votre mot de passe souhaité
+                    
+                    if (storedPassword === correctPassword) {
+                        // Mot de passe correct, affichez le contenu protégé
+                    } else {
+                        // Mot de passe incorrect, redirigez vers index.html
+                        window.location.href = "../index.html";
+                    }
+                    </script>
+                    
+                    <button id="returnButton" class="connexion2">Retour</button>
+                    
+                    <script>
+                    document.getElementById('returnButton').addEventListener('click', function() {
+                        localStorage.removeItem('password'); // Supprime le mot de passe du stockage local
+                        window.location.href = '../index.html'; // Redirige vers index.html
+                    });
+                    </script>
+                <article class="recomandations">
+                    <h2>Nos manhwas action</h2>
+                    <form>
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit">Rechercher</button>
+                    </form>                      
+                </article>
+                <div class="blackline"></div>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/stepmother.jpg" alt="" width="20" height="50">
+                                    <h2>stepmother’s friends</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">J’ai perdu ma mère quand j’étais jeune, elle nous a quittés, mon père et moi, pour vivre ensemble. Mon père voulait soulager ma douleur, il m’a laissé vivre une vie sans souci. Puis, soudain, un jour, mon père m’a présenté une jeune et belle femme qui s’est mariée parce qu’elle convoitait la propriété de l’homme. La voyant aimer sincèrement mon père, j’ai commencé à lui ouvrir mon cœur progressivement, cependant…</p>
+                    <div class="blackline2"></div>
+                    <article id="adulte" class="util">
+                        <label for="commentaire-input">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote()">Enregistrer</button>
+                    </article>
+                </article>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/secret.png" alt="" width="20" height="50">
+                                    <h2>secret class</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Lorsque Dae-Ho était enfant, ses parents ont été tués dans un accident tragique. Par la suite, il a été recueilli par l’ami de son défunt père, M. Cha, et a été élevé avec amour et attention.
+                        Aujourd’hui, à l’âge de 20 ans, Mme Cha se rend compte que Dae-Ho n’a pas reçu un enseignement approprié pour devenir un homme.
+                        Il ne cesse de faire des rêves humides et elle pense qu’il a besoin de quelqu’un pour lui montrer comment soulager ses pulsions. Elle prend sur elle de lui montrer comment faire…</p>
+                    <div class="blackline2"></div>
+                    <article id="adulte1" class="util">
+                        <label for="commentaire-input1">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input1" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote1()">Enregistrer</button>
+                    </article>
+                </article>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/survival.webp" alt="" width="20" height="50">
+                                    <h2>return survival</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Le monde est-il revenu à il y a six mois ? C’est une chance ? Ou une répétition du désespoir ? Une catastrophe, un virus zombie qui a frappé la Terre. Trois ans pour survivre à une vie dévastatrice et désespérée à travers des dizaines de crises de mort sur une planète en ruine. Finalement, je ne pouvais plus le supporter, et j’ai été frappé par une horde de zombies et j’ai fini. Et … quand j’ai rouvert les yeux … J’étais de retour dans le passé juste six mois avant le virus zombie est venu dans le monde ! Dans les six prochains mois, ce monde pacifique périra. Et seulement moi…</p>
+                    <div class="blackline2"></div>
+                    <article id="action2" class="util">
+                        <label for="commentaire-input2">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input2" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote2()">Enregistrer</button>
+                    </article>
+                </article>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/tennager.webp" alt="" width="20" height="50">
+                                    <h2>teenage swordsman</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">L’histoire se déroule dans le célèbre jeu VR en ligne « Quest Hero ».
+                        Un célèbre joueur de Quest Hero, Harang, est emmené dans un autre monde par une mystérieuse entité noire.
+                        Il a beau essayer, il n’arrive pas à se déconnecter, et il est même attaqué. Non seulement il ressent la douleur, mais il rencontre le vrai Yuta et non le PNJ Yuta.
+                        Harang pourra-t-il accomplir les « 7 quêtes » et rentrer chez lui sain et sauf ?
+                        C’est ainsi que commence l’histoire de l’adolescent épéiste Harang, qui est tombé dans un monde inconnu !</p>
+                    <div class="blackline2"></div>
+                    <article id="action3" class="util">
+                        <label for="commentaire-input3">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input3" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote3()">Enregistrer</button>
+                    </article>
+                </article>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/supergodgen.webp" alt="" width="20" height="50">
+                                    <h2>super god gen</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Basé sur une adaptation du roman de l’auteur ‘Twelve Winged Dark Seraph’. À l’avenir, d’innombrables bêtes envahiront. Comme vous êtes capable d’obtenir certains gènes en dévorant la chair des bêtes, l’humanité a accueilli une ère d’évolution génétique. Han Sen, un nouveau venu qui venait d’entrer dans le refuge, était un « maniaque des fesses » méprisé à l’extérieur. Il est, cependant, aussi le « Dieu B » qui a été admiré par beaucoup! Han Sen: « Je suis désolé, mais je suis le seul à pouvoir obtenir les gènes du Super Dieu! »</p>
+                    <div class="blackline2"></div>
+                    <article id="action4" class="util">
+                        <label for="commentaire-input4">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input4" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote4()">Enregistrer</button>
+                    </article>
+                </article>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/advanced.webp" alt="" width="20" height="50">
+                                    <h2>advanced evolution</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Ming He est un jeune homme doté d’un extraordinaire pouvoir de type invisible, mais ses pouvoirs se situent au rang le plus médiocre de la poussière blanche. Sur le chemin du retour, une étoile filante désastreuse portant le nom de code « Goddess » perce le ciel. Elle heurte par hasard Ming He, qui roulait sur une route déserte, et s’attache à lui. « Déesse » confère à Ming He un talent puissant et extraordinaire. Avec son talent original et inattendu de « déesse », Ming He va lentement devenir l’humain le plus fort, tout en découvrant la vérité derrière le pouvoir cosmique !</p>
+                    <div class="blackline2"></div>
+                    <article id="action5" class="util">
+                        <label for="commentaire-input5">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input5" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote5()">Enregistrer</button>
+                    </article>
+                </article>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/seriously.jpg" alt="" width="20" height="50">
+                                    <h2>it all starts with playing game seriously</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Le monde de yuans est devenu réalité et Liu yi, impuissant a vu sa sœur se faire tuer devant ses yeux. Mais après sa mort, le jeu lui a laissé une seconde chance en le renvoyant dans le passé, pourra-t-il sauver ceux qu’il aime ? Grâce à sa détermination et ses connaissances , pourra-t-il sauver sa sœur et accumuler des niveaux ? S’il s’y met à fond, arrivera-t-il à surpasser ses peurs et changer son futur, arrivera-t-il à renverser la hiérarchie qu’il connaissait ?</p>
+                    <div class="blackline2"></div>
+                    <article id="action6" class="util">
+                        <label for="commentaire-input6">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input6" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote6()">Enregistrer</button>
+                    </article>
+                </article>
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/seoulstation.webp" alt="" width="20" height="50">
+                                    <h2>seoul station druid</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Park Sooho est revenu sur Terre après avoir disparu dans un autre monde pendant près d’un millénaire. Mais au même moment, sa planète natale s’était transformée en un monde où la loi du plus fort régnait après l’apparition de « monstres ».</p>
+                    <div class="blackline2"></div>
+                    <article id="action7" class="util">
+                        <label for="commentaire-input7">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input7" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote7()">Enregistrer</button>
+                    </article>
+                </article>
+            </main>
+            <footer>
+                <img src="images/logo.png" alt="logo sport koh" title="Logo Sport
+                  KOH" width="70">
+                <img src="images/twitter.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <img src="images/facebook.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <p>
+                  Suivez-nous ! <br>
+                  Copyright © 2023 Manhwa <br>
+                  Informations légales | Politique de privatisation
+                </p>
+              </footer>
+              <script>
+                const searchButton = document.querySelector('button[type="submit"]');
+                searchButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le formulaire de s'envoyer
+                const searchTerm = document.querySelector('input[type="text"]').value;
+                if (searchTerm) {
+                    const regex = new RegExp(searchTerm, 'g');
+                    const pageContent = document.documentElement.innerHTML;
+                    const highlightedPageContent = pageContent.replace(regex, '<mark>$&</mark>');
+                    document.documentElement.innerHTML = highlightedPageContent;
+                    const highlightedElement = document.querySelector('mark');
+                    if (highlightedElement) {
+                    setTimeout(function() {
+                        highlightedElement.scrollIntoView();
+                    }, 0);
+                    }
+                }
+                });
+
+
+                function enregistrerNote() {
+                    var com = document.getElementById("commentaire-input").value;
+                    localStorage.setItem("adulte", com);
+                }
+                var noteEnregistree = localStorage.getItem("adulte");
+                if (noteEnregistree) {
+                    document.getElementById("commentaire-input").value = noteEnregistree;
+                }
+
+                ///////
+
+                function enregistrerNote1() {
+                    var com1 = document.getElementById("commentaire-input1").value;
+                    localStorage.setItem("adulte1", com1);
+                }
+                var note1Enregistree = localStorage.getItem("adulte1");
+                if (note1Enregistree) {
+                    document.getElementById("commentaire-input1").value = note1Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote2() {
+                    var com2 = document.getElementById("commentaire-input2").value;
+                    localStorage.setItem("action2", com2);
+                }
+                var note2Enregistree = localStorage.getItem("action2");
+                if (note2Enregistree) {
+                    document.getElementById("commentaire-input2").value = note2Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote3() {
+                    var com3 = document.getElementById("commentaire-input3").value;
+                    localStorage.setItem("action3", com3);
+                }
+                var note3Enregistree = localStorage.getItem("action3");
+                if (note3Enregistree) {
+                    document.getElementById("commentaire-input3").value = note3Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote4() {
+                    var com4 = document.getElementById("commentaire-input4").value;
+                    localStorage.setItem("action4", com4);
+                }
+                var note4Enregistree = localStorage.getItem("action4");
+                if (note4Enregistree) {
+                    document.getElementById("commentaire-input4").value = note4Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote5() {
+                    var com5 = document.getElementById("commentaire-input5").value;
+                    localStorage.setItem("action5", com5);
+                }
+                var note5Enregistree = localStorage.getItem("action5");
+                if (note5Enregistree) {
+                    document.getElementById("commentaire-input5").value = note5Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote6() {
+                    var com6 = document.getElementById("commentaire-input6").value;
+                    localStorage.setItem("action6", com6);
+                }
+                var note6Enregistree = localStorage.getItem("action6");
+                if (note6Enregistree) {
+                    document.getElementById("commentaire-input6").value = note6Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote7() {
+                    var com7 = document.getElementById("commentaire-input7").value;
+                    localStorage.setItem("action7", com7);
+                }
+                var note7Enregistree = localStorage.getItem("action7");
+                if (note7Enregistree) {
+                    document.getElementById("commentaire-input7").value = note7Enregistree;
+                }
+
+                ///////
+              </script>
+        </body>
+</html>

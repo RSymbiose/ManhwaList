@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Manhwa</title>
+		<meta name="description" content="Ce site vous permet de trouver différentes informations sur les manhwa" />
+		<meta name="keywords" content="manhwa, scan" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+		<body>
+            <!-- Nav bar -->
+
+      <nav class="desktop transparent">
+        <a href="../index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="action.html">Action</a>
+        <a href="fantastique.html">Fantastique</a>
+        <a href="scolaire.html">Scolaire</a>
+        <a href="romance.html">Romance</a>
+        <a href="contact.html">Contacts</a>
+        </nav>
+          <nav class="mobile">
+            <a onClick="openNav()"><img draggable="false" src="images/Burger.svg"></a>
+            <a class="logoMobile" href="../index.html"><img draggable="false" src="images/logo.png"></a>
+            <a href="../index.html"><img draggable="false" src="images/Mail.svg"></a>
+          </nav>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="action.html">Action</a>
+              <a href="fantastique.html">Fantastique</a>
+              <a href="scolaire.html">Scolaire</a>
+              <a href="romance.html">Romance</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+        <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("desktop").style.top = "0";
+            } else {
+                document.getElementById("desktop").style.top = "-100px";
+            }
+        }
+  
+        function openNav() {
+            document.getElementById("myNav").style.width = "80%";
+        }
+  
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+  
+        </script>  
+            <header>
+                <h1>FANTASTIQUE</h1>
+            </header>
+            <main>
+                <article class="bande">
+                </article>
+                <article class="recomandations">
+                    <h2>Nos manhwas fantastique</h2>
+                    <form>
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit">Rechercher</button>
+                    </form>
+                </article>
+                <div class="blackline"></div>
+                <!-- Fantastique ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/tbate.png" alt="" width="20" height="50">
+                                    <h2>the beginning after the end</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Le roi Grey a une force, une richesse et un prestige inégalés. Cependant, la solitude persiste étroitement derrière ceux qui ont un grand pouvoir. Sous l'extérieur glamour d'un roi puissant se cache la coquille de l'homme, sans but ni volonté. Réincarné dans un nouveau monde rempli de magie et de monstres, le roi a une seconde chance de revivre sa vie en tant qu'Arthur Leywin, premier fils d'un modeste couple d'aventuriers pratiquant la magie. Corriger les erreurs de son passé ne sera cependant pas son seul défi. Sous la paix et la prospérité du nouveau monde se cache un courant sous-jacent qui menace de détruire tout ce pour quoi il a travaillé, remettant en question son rôle et la raison de sa nouvelle naissance.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique" class="util">
+                        <label for="commentaire-input">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique1 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/tales.jfif" alt="" width="20" height="50">
+                                    <h2>tales of demon and gods</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Nie Li va renaître, après avoir succombé en affrontant 6 créatures divines et leur maître. Mais cette seconde chance que la providence lui a accordée, si elle l'a renvoyé dans le passé de plusieurs années avant la chute d'Illustria, lui a également rendu son corps d'adolescent pas très doué... Son seul atout, le vaste savoir acquis au cours de sa précédente vie d'errance et d'aventures, n'a été conservé qu'en perdant son trésor le plus précieux, le Livre du Démon du Temps. Notre héros parviendra-t-il à devenir assez fort pour changer son destin et celui de ses compagnons avec le peu de temps dont il dispose avant la destruction d'Illustria ? Telle est l'histoire de Tales of Demons and Gods !</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique1" class="util">
+                        <label for="commentaire-input1">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input1" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote1()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique2 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/tog.jpg" alt="" width="20" height="50">
+                                    <h2>tower of god</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Bam est un jeune homme qui n'a jamais connu la société et la présence des autres à l'exception de Rachel, la seule fille qui ait jamais compté pour lui. Ce qu'il désire le plus au monde ? Continuer de vivre avec elle. Mais lorsque Rachel se met en tête d'atteindre le sommet de la Tour, elle s'embarque dans une aventure avec, à sa poursuite, Bam, qui suit désespéramment ses traces...</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique2" class="util">
+                        <label for="commentaire-input2">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input2" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote2()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique3 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/sculptor.jfif" alt="" width="20" height="50">
+                                    <h2>legendary moonlight sculptor</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Legendary Moonlight Sculptor est l'histoire d'un homme, Lee Hyun, qui est un esclave de l'argent. Il était auparavant connu comme le légendaire Dieu de la guerre du très populaire MMORPG, Continent of Magic. Dans une tentative d'aider sa famille criblée de dettes, il met son personnage aux enchères pour le trouver vendu à ₩3,1 milliards. Une course malheureuse avec des usuriers fait cependant perdre à Lee Hyun la quasi-totalité de son argent. Cela l'a poussé à entrer dans la nouvelle ère du jeu menée par le tout premier MMORPG en réalité virtuelle, Royal Road, pour aider sa grand-mère malade et économiser suffisamment pour les futurs frais de scolarité de sa sœur.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique3" class="util">
+                        <label for="commentaire-input3">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input3" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote3()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique4 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/magic.jpg" alt="" width="20" height="50">
+                                    <h2>magic emperor</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">L’histoire raconte la vie de l’empereur magique, l’homme le plus fort du monde et son périple après sa mort et sa réincarnation en un garçon sans culture.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique4" class="util">
+                        <label for="commentaire-input4">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input4" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote4()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique5 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/universe.jpeg" alt="" width="20" height="50">
+                                    <h2>martial universe</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Lin Dong est un enfant d'une branche éloignée de la famille Lin. Une des quatre plus grandes familles de l'Empire. Lorsqu'il avait 8 ans, il vit son père, considéré comme un génie, se faire battre en un coup par Lin Langtian, un membre de la famille principale. Depuis ce jour funeste, son père est gravement blessé et sa famille est mise au ban de la société. Lin Dong n'a aucun talent et se fait brutaliser par tout le monde mais il finit par trouver un objet qui changera sa vie à jamais.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique5" class="util">
+                        <label for="commentaire-input5">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input5" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote5()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique6 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/reverseworld.jpg" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">immortal swordsman in the reverse world</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Chu Qing est un cultivateur expert en sabre, qui est entré accidentellement dans le monde des fées il y a 300 ans. C'est au cours de ces 300 ans qu'il a commencé son voyage de culture. Au moment d'atteindre le royaume de l'éternité, on ne s'attendait pas à ce qu'il ouvre plutôt le hall du temps et de l'espace et qu'il revienne sur terre à l'âge de 17 ans. Mais lorsqu'il a vu la situation, il s'est avéré que ce n'était pas la terre dans laquelle il avait vécu autrefois, mais le monde était inversé entre les rôles des femmes et des hommes. Comment s'est déroulé son voyage pour trouver un moyen de revenir au monde originel, et de vaincre et conquérir les femmes fortes du monde ...</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique6" class="util">
+                        <label for="commentaire-input6">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input6" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote6()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique7 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/theghostlydoctor.webp" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">the ghostly doctor</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Feng Jiu, leader de la secte cachée, spécialisée dans le poison et l’assassinat. Une génie et une cinglée aux yeux des autres. Après être décédée des suites d’un accident, elle renaît dans le corps d’une femme défigurée. Feng Qingge est trahie par sa soeur qui lui vole son identité, la défigure et l’abandonne dans un bordel. Elle permet à Feng Jiu de renaître dans son corps, et avant de mourir lui demande de veiller sur ses parents et d’assouvir sa vegeance. Suivez les aventures de Feng Jiu, le docteur fantôme!</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique7" class="util">
+                        <label for="commentaire-input7">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input7" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote7()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique8 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/DemonicMaster.webp" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">the descent of the demonic master</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Il était craint de tous mais une coalition de maîtres réussit finalement à lui ôter la vie. Ce n’est pourtant pas la fin pour lui ; le voilà de retour dans son corps d’origine, sur Terre. Et cette fois-ci pas question de se laisser marcher sur les pieds ou de perdre les gens qu’il aime !</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique8" class="util">
+                        <label for="commentaire-input8">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input8" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote8()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique9 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/dragon.jpg" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">dragon son-in-law war god</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Il y a cinq ans, l’entreprise de son père a été piégée par quelqu’un, et il a perdu son argent. Jiang Beichen a subi des humiliations devant ses proches afin de soigner la maladie de son père, et a même été impitoyablement abandonné par sa fiancée, pour finalement sombrer dans la rivière. Cinq ans plus tard, il a ajouté la gloire à son corps et est revenu fort. Non seulement il a balayé tous les abus et vengé son père, mais il s’est également tenu au sommet de Kyushu, dominant le monde.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique9" class="util">
+                        <label for="commentaire-input9">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input9" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote9()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique10 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/MasterBaek.jpg" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">star instructor, master baek</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Suryong Baek, le meilleur instructeur du culte démoniaque, se fait tuer. Mais il se réveille dans le corps d'un homme qui enseigne les arts martiaux dans un petit dojo de campagne. Bien que son nouveau corps soit faible et ne puisse pas cultiver l'énergie interne, Suryong connaît cette situation et la méthode pour guérir. Cependant, la cure demande beaucoup d'argent ce qui va l'amener à passer plusieurs épreuves pour tenter de devenir le meilleur instructeur de l'académie du dragon azur. Parviendra-t-il à devenir le plus grand maître malgré les vestiges du culte démoniaque qui commencent à apparaître ?</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique10" class="util">
+                        <label for="commentaire-input10">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input10" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote10()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique11 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/TheGreatMage.jpg" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">the great mage returns after 4000 years</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Le pire élève de l’Académie Westrod, la honte de la Maison Blake. Une nouvelle âme entre dans le corps sans vie de Frey Blake, le garçon qui ne pouvait pas supporter sa vie douloureuse et qui a préféré la mort. « Qu’est-ce que ce corps ? Je vais devoir en vérifier chaque petit détail. » Le grand mage Lucas Traumen. Il a gagné sa chance de se venger en gagnant la chair et les os de Frey Blake le disgrâcieux ! Et maintenant commence l’intéressante aventure du Grand Mage qui est revenu après 4000 ans !</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique11" class="util">
+                        <label for="commentaire-input11">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input11" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote11()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique12 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/The Scholar’s Reincarnation.webp" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">the scholar’s reincarnation</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Un artiste matériel, se prétendant être un “ meurtrier ” est vaincu par un attentat-suicide au combat et renaît comme un premier enfant né d'un seigneur local. Après un nouveau départ, une famille chaleureuse et une petite sœur pour protéger –, il décide de devenir une meilleure personne dans sa nouvelle vie.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique12" class="util">
+                        <label for="commentaire-input12">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input12" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote12()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique13 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/Dragon Master.jpg" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">dragon master</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">Sur ce continent, toutes les créatures avaient une chance de se transformer en dragons. On disait que chaque vie avait sa propre Porte du Dragon. Après l’avoir franchie, ils devenaient comme le soleil et la lune dans le ciel, éblouissants de gloire. Cela s’applique également aux humains. Les Portes du Dragon des humains devenaient des Maîtres des Dragons.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique13" class="util">
+                        <label for="commentaire-input13">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input13" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote13()">Enregistrer</button>
+                    </article>
+                </article>
+                <!-- Fantastique14 ! -->
+                <article class="boxe">
+                    <article class="cartes2">
+                        <div class="flip-card2">
+                            <div class="flip-card-inner2">
+                                <div class="flip-card-front2">
+                                    <img src="images/The Strongest God King.jpg" alt="" width="20" height="50">
+                                    <h2 class="titrearalonge">the strongest god king</h2>
+                                </div>
+                                <div class="flip-card-back2">
+                                    <h2>Note : ../..</h2>
+                                    <h3>Genres :</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <p class="description">C’est une époque pleine d’aura, et un monde où les immortels se rassemblent. Le jeune Wu Fu revint d’une réunion, et en regardant de ses yeux, comme tout était calme. Ce que je dois faire, c’est lever l’épée et débarrasser tous les ennemis des derniers.</p>
+                    <div class="blackline2"></div>
+                    <article id="fantastique14" class="util">
+                        <label for="commentaire-input14">Avis ou commentaires :</label>
+                        <br>
+                        <textarea id="commentaire-input14" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                        <button type="button" onclick="enregistrerNote14()">Enregistrer</button>
+                    </article>
+                </article>
+            </main>
+            <footer>
+                <img src="images/logo.png" alt="logo sport koh" title="Logo Sport
+                  KOH" width="70">
+                <img src="images/twitter.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <img src="images/facebook.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <p>
+                  Suivez-nous ! <br>
+                  Copyright © 2023 Manhwa <br>
+                  Informations légales | Politique de privatisation
+                </p>
+              </footer>
+              <script>
+                const searchButton = document.querySelector('button[type="submit"]');
+                searchButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le formulaire de s'envoyer
+                const searchTerm = document.querySelector('input[type="text"]').value;
+                if (searchTerm) {
+                    const regex = new RegExp(searchTerm, 'g');
+                    const pageContent = document.documentElement.innerHTML;
+                    const highlightedPageContent = pageContent.replace(regex, '<mark>$&</mark>');
+                    document.documentElement.innerHTML = highlightedPageContent;
+                    const highlightedElement = document.querySelector('mark');
+                    if (highlightedElement) {
+                    setTimeout(function() {
+                        highlightedElement.scrollIntoView();
+                    }, 0);
+                    }
+                }
+                });
+
+                function enregistrerNote() {
+                    var com = document.getElementById("commentaire-input").value;
+                    localStorage.setItem("fantastique", com);
+                }
+                var noteEnregistree = localStorage.getItem("fantastique");
+                if (noteEnregistree) {
+                    document.getElementById("commentaire-input").value = noteEnregistree;
+                }
+
+                ///////
+
+                function enregistrerNote1() {
+                    var note1 = document.getElementById("commentaire-input1").value;
+                    localStorage.setItem("fantastique1", note1);
+                }
+                var note1Enregistree = localStorage.getItem("fantastique1");
+                if (note1Enregistree) {
+                    document.getElementById("commentaire-input1").value = note1Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote2() {
+                var note2 = document.getElementById("commentaire-input2").value;
+                localStorage.setItem("fantastique2", note2);
+                }
+                var note2Enregistree = localStorage.getItem("fantastique2");
+                if (note2Enregistree) {
+                    document.getElementById("commentaire-input2").value = note2Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote3() {
+                var note3 = document.getElementById("commentaire-input3").value;
+                localStorage.setItem("fantastique3", note3);
+                }
+                var note3Enregistree = localStorage.getItem("fantastique3");
+                if (note3Enregistree) {
+                    document.getElementById("commentaire-input3").value = note3Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote4() {
+                var note4 = document.getElementById("commentaire-input4").value;
+                localStorage.setItem("fantastique4", note4);
+                }
+                var note4Enregistree = localStorage.getItem("fantastique4");
+                if (note4Enregistree) {
+                    document.getElementById("commentaire-input4").value = note4Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote5() {
+                var note5 = document.getElementById("commentaire-input5").value;
+                localStorage.setItem("fantastique5", note5);
+                }
+                var note5Enregistree = localStorage.getItem("fantastique5");
+                if (note5Enregistree) {
+                    document.getElementById("commentaire-input5").value = note5Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote6() {
+                var note6 = document.getElementById("commentaire-input6").value;
+                localStorage.setItem("fantastique6", note6);
+                }
+                var note6Enregistree = localStorage.getItem("fantastique6");
+                if (note6Enregistree) {
+                    document.getElementById("commentaire-input6").value = note6Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote7() {
+                var note7 = document.getElementById("commentaire-input7").value;
+                localStorage.setItem("fantastique7", note7);
+                }
+                var note7Enregistree = localStorage.getItem("fantastique7");
+                if (note7Enregistree) {
+                    document.getElementById("commentaire-input7").value = note7Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote8() {
+                var note8 = document.getElementById("commentaire-input8").value;
+                localStorage.setItem("fantastique8", note8);
+                }
+                var note8Enregistree = localStorage.getItem("fantastique8");
+                if (note8Enregistree) {
+                    document.getElementById("commentaire-input8").value = note8Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote9() {
+                var note9 = document.getElementById("commentaire-input9").value;
+                localStorage.setItem("fantastique9", note9);
+                }
+                var note9Enregistree = localStorage.getItem("fantastique9");
+                if (note9Enregistree) {
+                    document.getElementById("commentaire-input9").value = note9Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote10() {
+                var note10 = document.getElementById("commentaire-input10").value;
+                localStorage.setItem("fantastique10", note10);
+                }
+                var note10Enregistree = localStorage.getItem("fantastique10");
+                if (note10Enregistree) {
+                    document.getElementById("commentaire-input10").value = note10Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote11() {
+                var note11 = document.getElementById("commentaire-input11").value;
+                localStorage.setItem("fantastique11", note11);
+                }
+                var note11Enregistree = localStorage.getItem("fantastique11");
+                if (note11Enregistree) {
+                    document.getElementById("commentaire-input11").value = note11Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote12() {
+                var note12 = document.getElementById("commentaire-input12").value;
+                localStorage.setItem("fantastique12", note12);
+                }
+                var note12Enregistree = localStorage.getItem("fantastique12");
+                if (note12Enregistree) {
+                    document.getElementById("commentaire-input12").value = note12Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote13() {
+                var note13 = document.getElementById("commentaire-input13").value;
+                localStorage.setItem("fantastique13", note13);
+                }
+                var note13Enregistree = localStorage.getItem("fantastique13");
+                if (note13Enregistree) {
+                    document.getElementById("commentaire-input13").value = note13Enregistree;
+                }
+
+                ///////
+
+                function enregistrerNote14() {
+                var note14 = document.getElementById("commentaire-input14").value;
+                localStorage.setItem("fantastique14", note14);
+                }
+                var note14Enregistree = localStorage.getItem("fantastique14");
+                if (note14Enregistree) {
+                    document.getElementById("commentaire-input14").value = note14Enregistree;
+                }
+              </script>
+        </body>
+</html>

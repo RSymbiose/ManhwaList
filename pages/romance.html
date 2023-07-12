@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Manhwa</title>
+		<meta name="description" content="Ce site vous permet de trouver différentes informations sur les manhwa" />
+		<meta name="keywords" content="manhwa, scan" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+		<body>
+            <!-- Nav bar -->
+
+      <nav class="desktop transparent">
+        <a href="../index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="action.html">Action</a>
+        <a href="fantastique.html">Fantastique</a>
+        <a href="scolaire.html">Scolaire</a>
+        <a href="romance.html">Romance</a>
+        <a href="contact.html">Contacts</a>
+        </nav>
+          <nav class="mobile">
+            <a onClick="openNav()"><img draggable="false" src="images/Burger.svg"></a>
+            <a class="logoMobile" href="../index.html"><img draggable="false" src="images/logo.png"></a>
+            <a href="../index.html"><img draggable="false" src="images/Mail.svg"></a>
+          </nav>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="action.html">Action</a>
+              <a href="fantastique.html">Fantastique</a>
+              <a href="scolaire.html">Scolaire</a>
+              <a href="romance.html">Romance</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </div>
+        <script>
+  
+        window.onscroll = function() {scrollFunction()};
+  
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("desktop").style.top = "0";
+            } else {
+                document.getElementById("desktop").style.top = "-100px";
+            }
+        }
+  
+        function openNav() {
+            document.getElementById("myNav").style.width = "80%";
+        }
+  
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+  
+        </script>  
+            <header>
+                <h1>ROMANCE</h1>
+            </header>
+            <main>
+                <article class="bande">
+                </article>
+                <article class="recomandations">
+                    <h2>Nos manhwas romance</h2>
+                    <form>
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit">Rechercher</button>
+                    </form>
+                </article>
+                <div class="blackline"></div>
+                <!-- Romance  -->
+                <article class="boxe">
+                  <article class="cartes2">
+                      <div class="flip-card2">
+                          <div class="flip-card-inner2">
+                              <div class="flip-card-front2">
+                                  <img src="images/hopeless.jpg" alt="" width="20" height="50">
+                                  <h2>she's hopeless</h2>
+                              </div>
+                              <div class="flip-card-back2">
+                                  <h2>Note : ../..</h2>
+                                  <h3>Genres :</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </article>
+                  <p class="description">Taewoong est un garde du corps en devenir. Il ne pensait pas que son premier travail consisterait à s'occuper d'une lycéenne au tempérament exécrable et issue d'une famille très riche. Obligé de fréquenter son école et de la protéger en secret, le jeune homme n'a pas d'autre choix que de dire qu'il a eu le coup de foudre pour elle afin d'expliquer sa présence. Va-t-elle rester insensible ?</p>
+                  <div class="blackline2"></div>
+                  <article id="romance" class="util">
+                    <label for="commentaire-input">Avis ou commentaires :</label>
+                    <br>
+                    <textarea id="commentaire-input" name="commentaire">Vous pouvez enregistrer ici votre niveau d'avancement, une note ou même des commentaires</textarea>
+                    <button type="button" onclick="enregistrerNote()">Enregistrer</button>
+                </article>
+              </article>
+            </main>
+            <footer>
+                <img src="images/logo.png" alt="logo sport koh" title="Logo Sport
+                  KOH" width="70">
+                <img src="images/twitter.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <img src="images/facebook.png" alt="logo sport koh" title="Logo
+                  Sport KOH" width="35">
+                <p>
+                  Suivez-nous ! <br>
+                  Copyright © 2023 Manhwa <br>
+                  Informations légales | Politique de privatisation
+                </p>
+              </footer>
+              <script>
+                const searchButton = document.querySelector('button[type="submit"]');
+                searchButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le formulaire de s'envoyer
+                const searchTerm = document.querySelector('input[type="text"]').value;
+                if (searchTerm) {
+                    const regex = new RegExp(searchTerm, 'g');
+                    const pageContent = document.documentElement.innerHTML;
+                    const highlightedPageContent = pageContent.replace(regex, '<mark>$&</mark>');
+                    document.documentElement.innerHTML = highlightedPageContent;
+                }
+                });
+
+                function enregistrerNote() {
+                    var com = document.getElementById("commentaire-input").value;
+                    localStorage.setItem("romance", com);
+                }
+                var noteEnregistree = localStorage.getItem("romance");
+                if (noteEnregistree) {
+                    document.getElementById("commentaire-input").value = noteEnregistree;
+                }
+
+                ///////
+              </script>
+        </body>
+</html>
